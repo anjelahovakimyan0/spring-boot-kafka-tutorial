@@ -8,7 +8,8 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
 
     public NewTopic javaguidesTopic() {
-        return TopicBuilder.name("javaguides")
+        return TopicBuilder
+                .name("javaguides")
                 .partitions(1)
                 .build();
     }
